@@ -9,8 +9,8 @@ loginButton.addEventListener("click", (e) => {
     // Get the values input by the user in the form fields
     const username = loginForm.username.value;
     const password = loginForm.password.value;
-    const username_github = ${{ secrets.USERNAME }};
-    const password_github = ${{ secrets.PASSWORD }};
+    var username_github = ${{ secrets.USERNAME }};
+    var password_github = ${{ secrets.PASSWORD }};
 
     if (username === username_github && password === password_github) {
         // If the credentials are valid, show an alert box and reload the page
