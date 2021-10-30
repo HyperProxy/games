@@ -12,7 +12,7 @@ loginButton.addEventListener("click", (e) => {
     var username_github = ${{ secrets.USERNAME }};
     var password_github = ${{ secrets.PASSWORD }};
 
-    if (username === username_github && password === password_github) {
+    if (username = username_github && password = password_github) {
         // If the credentials are valid, show an alert box and reload the page
         alert("You have successfully logged in.");
         window.location.replace('Kz-PrNZQ6wc3XFMedwD!.html');
