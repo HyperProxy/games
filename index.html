@@ -32,10 +32,12 @@
 </div>
 
   <script>
+  var username = ${{secret.USERNAME}}
+  var password = ${{secret.PASSWORD}}
   function validateForm() {
     let x = document.forms["Login"]["fname"].value;
     let y = document.forms["Login"]["fpass"].value;
-    if (x == "jimmy" && y == "1234") {
+    if (x == username && y == password) {
       window.location.replace("Kz-PrNZQ6wc3XFMedwD!.html");
     }
   }
