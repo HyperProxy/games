@@ -2,8 +2,8 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
-var username = ${{ secrets.username }};
-var password = ${{ secrets.password }};
+var username_github = ${{ secrets.username }};
+var password_github = ${{ secrets.password }};
 
 // When the login button is clicked, the following code is executed
 loginButton.addEventListener("click", (e) => {
@@ -13,7 +13,7 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === username && password === password) {
+    if (username === username_github && password === password_github) {
         // If the credentials are valid, show an alert box and reload the page
         alert("You have successfully logged in.");
         window.location.replace('games.html');
