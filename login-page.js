@@ -2,8 +2,8 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
-var username_github = ${{ secrets.username }};
-var password_github = ${{ secrets.password }};
+var username_github = ${{ secrets.USERNAME }};
+var password_github = ${{ secrets.PASSWORD }};
 
 // When the login button is clicked, the following code is executed
 loginButton.addEventListener("click", (e) => {
