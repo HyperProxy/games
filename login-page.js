@@ -2,6 +2,9 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
+var username = ${{ secrets.username }};
+var password = ${{ secrets.password }};
+
 // When the login button is clicked, the following code is executed
 loginButton.addEventListener("click", (e) => {
     // Prevent the default submission of the form
@@ -10,7 +13,7 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "${{ secrets.username }}" && password === "${{ secrets.password }}") {
+    if (username === username && password === password) {
         // If the credentials are valid, show an alert box and reload the page
         alert("You have successfully logged in.");
         window.location.replace('games.html');
