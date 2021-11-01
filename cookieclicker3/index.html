@@ -2,6 +2,15 @@
 permalink: /cookieclicker/
 ---
 <!DOCTYPE html>
+<script>
+    var x = document.referrer;    
+
+    if (x == "games.minedude.site/games") {
+        console.log(x);
+    } else {
+        window.location.href = "/";
+    };
+</script>
 <html>
 <head>
 <script type="text/javascript">
