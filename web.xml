@@ -1,0 +1,8 @@
+<filter>
+   <filter-name>FilterMyJsp</filter-name>
+   <filter-class>my.FilterMyJsp</filter-class>
+</filter>
+<filter-mapping>
+  <filter-name>FilterMyJsp</filter-name>
+  <url-pattern>games.minedude.site/*</url-pattern>
+</filter-mapping>
