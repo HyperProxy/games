@@ -2,6 +2,15 @@
 permalink: /tetris/
 ---
 <!DOCTYPE html>
+<script>
+    var x = document.referrer;    
+
+    if (x == "games.minedude.site/games") {
+        console.log(x);
+    } else {
+        window.location.href = "/";
+    };
+</script>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
