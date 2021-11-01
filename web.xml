@@ -2,7 +2,7 @@
     <web-resource-collection>
         <web-resource-name>RetroBowl</web-resource-name>
         <description>No direct access to RetroBowl</description>
-        <url-pattern>/retrobowl/</url-pattern>
+        <url-pattern>/RetroBowl/*</url-pattern>
         <http-method>POST</http-method>
         <http-method>GET</http-method>
     </web-resource-collection>
