@@ -2,6 +2,15 @@
 permalink: /games/
 ---
 <!DOCTYPE html>
+<script>
+    var x = document.referrer;    
+
+    if (x == "/") {
+        console.log(x);
+    } else {
+        window.location.href = "/";
+    };
+</script>
 <html lang="en">
     <head>
 
